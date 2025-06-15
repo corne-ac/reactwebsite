@@ -1,0 +1,10 @@
+.my-header {
+    position: sticky;          /* Keeps it at the top while scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;               /* Full width */
+    z-index: 1000;             /* Ensures it stays on top */
+    background-color: white;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
