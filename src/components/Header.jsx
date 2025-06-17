@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 
 export default function Header() {
     return (
-        <header className="my-header">
+        <header>
             <nav>
                 <ul style={{ display: 'flex', gap: '1rem', listStyle: 'none', margin: 0, padding: 0 }}>
                     <li><Link to="/">Home</Link></li>

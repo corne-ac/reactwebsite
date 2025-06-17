@@ -1,10 +1,32 @@
-.my-header {
+header {
     position: sticky;          /* Keeps it at the top while scrolling */
     top: 0;
     left: 0;
     width: 100%;               /* Full width */
     z-index: 1000;             /* Ensures it stays on top */
-    background-color: white;
-    padding: 1rem;
-    border-bottom: 1px solid #ccc;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
 }

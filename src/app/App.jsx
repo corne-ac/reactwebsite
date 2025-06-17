@@ -5,13 +5,13 @@ import NotesList from './pages/NotesList.jsx'
 
 function App() {
     return (
-        <>
+        <div>
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/notes" element={<NotesList />} />
             </Routes>
-        </>
+        </div>
     )
 }
 
