@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { supabase } from '../../lib/supabaseClient.js'
 import NoteItem from "../../components/NoteItem.jsx";
+import './NotesList.css';
 
 export default function NotesList() {
     const [notes, setNotes] = useState([])
@@ -18,11 +19,11 @@ export default function NotesList() {
     return (
         <div>
             <h1>Notes</h1>
-            <div className="notesListContainer" >
+            <section className="NotesListContainer" >
                 {notes.map(note => (
                    <NoteItem key={note.id} note={note} />
                 ))}
-            </div>
+            </section>
         </div>
     )
 }

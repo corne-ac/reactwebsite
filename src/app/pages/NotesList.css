@@ -1,6 +1,13 @@
 .NotesListContainer {
+    width: 100%;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: flex-start;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+    .NotesListContainer {
+        flex-direction: column;
+        gap: 8px;
+    }
 }

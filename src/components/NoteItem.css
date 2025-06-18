@@ -1,7 +1,22 @@
 .note-card {
     display: flex;
+    padding: 16px;
     flex-direction: column;
     background-color: black;
     border-radius: 10px;
     border: 1px solid gray;
+}
+
+.note-card:hover {
+    background-color: #333;
+}
+
+.note-card-content {
+    width: 220px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
 }

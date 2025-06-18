@@ -1,0 +1,91 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-title-container {
+    height: 95vh;
+    width: fit-content;
+    align-content: center;
+    text-align: center;
+    padding: 0;
+}
+
+.home-title {
+    font-weight: normal;
+    text-align: center;
+    align-content: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    border-right: .15em solid darkcyan;
+    letter-spacing: .15em;
+    animation: blink-caret .75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: darkcyan; }
+}
+
+.home-card-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    column-gap: 2rem;
+}
+
+@media (max-width: 600px) {
+    .home-card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.home-card {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 20%;
+    border-radius: 10px;
+    border: 1px solid gray;
+    background-color: black;
+}
+
+@media (max-width: 600px) {
+    .home-card {
+        width: 80%;
+        margin-top: 20px;
+    }
+}
+
+.mark-button {
+    margin: 30px 0 0 0;
+    padding: 8px 20px;
+    font-size: 1.2rem;
+    width: fit-content;
+    height: fit-content;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid darkcyan;
+    font-weight: bolder;
+}
+
+.mark-button:hover {
+    background-color: darkcyan;
+    cursor: pointer;
+}
+
+.typewriter {
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+
+}
+

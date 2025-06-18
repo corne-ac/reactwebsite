@@ -1,0 +1,13 @@
+.content {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1.5rem;
+}
+
+@media (max-width: 600px) {
+    .content {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
