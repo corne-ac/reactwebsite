@@ -1,12 +1,11 @@
 import './Home.css'
+import {FaGithub, FaLinkedin} from 'react-icons/fa'
 
 const cardContents = [
     { header: 'What', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae velit ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae velit ex.' },
     { header: 'Why', content: 'Mauris dapibus risus quis suscipit vulputate. Egestas purus viverra accumsan in nisl nisi.' },
     { header: 'How', content: 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.' }
 ];
-
-
 
 export default function Home () {
     return (
@@ -16,7 +15,17 @@ export default function Home () {
 
                 {/*Home Title Content*/}
                 <div className="home-title-container">
-                    <a className="home-title typewriter">Hi, my name is <b>Piet Retief</b></a>
+                    {window.innerWidth <= 800 ? (
+                        <a className="home-title typewriter">Hi,<br/> my name is <br/><b>Piet Retief </b></a>
+                    ) : (
+                        <a className="home-title typewriter">Hi, my name is <b>Piet Retief</b></a>
+                    )}
+
+                    <div className="icons-container">
+                        <a className="icon-button" href="https://github.com/corne-ac" target="_blank" rel="noopener noreferrer"><FaGithub/></a>
+                        <a className="icon-button" href="https://www.linkedin.com/in/corn%C3%A9-ackerman-0687bb230/" target="_blank" rel="noopener noreferrer"><FaLinkedin/></a>
+                    </div>
+
                 </div>
 
                 {/*cards*/}
